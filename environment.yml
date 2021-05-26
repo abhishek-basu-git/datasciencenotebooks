@@ -1,0 +1,39 @@
+name: dsenv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - nb_conda
+  - pip
+  - seaborn                   # for Jupyter visualizations
+  - matplotlib                # for visulaizations
+  - category_encoders         # ML feature engineering
+  - requests                # send HTTP/1.1 requests
+  - keras
+  - tensorflow
+  - tensorflow-base
+  - tensorflow-estimator
+  - pytest                       # Run unit tests
+  - sqlalchemy
+  - pip:
+    - cython                # ability to natively call C functions
+    - joblib                 # persist to disk transparently
+    - tabulate                # pretty print python dataframes
+    - pandas                # data analysis and manipulation tool
+    - numpy                  # general-purpose array-processing package
+    - numpydoc                # sphinx extension to support docstrings in Numpy format
+    - xlrd                    # Microsoft Excel data extraction library
+    - scikit-learn           # A set of python modules for machine learning and data mining
+    - scipy                   # engineering ecosystem; depends on numpy
+    - jsonpickle               # serializies any arbitrary object graph into JSON
+    - plac                    # simple command line arguments parser
+    - fastapi                # web framework for building APIs with Python
+    - uvicorn                # an ASGI server (includes gunicorn)
+    - uuid                           # UUID generator
+    - minisom                 # Self Organizing Maps Algorithm
+    - fastapi                # web framework for building APIs with Python
+    - pymysql                # sqlalchemy interface for mysql
+#    - psycopg2==2.8.4                # PostgreSQL db adapter (Python DB API 2.0 compliant)
+#    - postgres==3.0.0                # high-value abstraction over psycopg2
+#    - sqlalchemy==1.3.15             # generic SQL toolkit and ORM
